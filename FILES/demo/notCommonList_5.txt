@@ -1,0 +1,3 @@
+[acknowledged] = [accepted, recognized, declarable, given, putative, 1]
+[liven_up] = [spirit, spirit_up, inspirit, energize, jazz_up, 1]
+[minimum] = [small_indefinite_quantity, small_indefinite_amount, peak, skeleton, extremum, -1]

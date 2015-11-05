@@ -1,0 +1,3 @@
+[equitable] = [fair, honest, evenhanded, 1]
+[trusted] = [trusty, trustworthy, 1]
+[trustful] = [confiding, unsuspicious, unsuspecting, 1]

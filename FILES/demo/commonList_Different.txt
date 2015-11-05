@@ -1,0 +1,4 @@
+[abc] = [grammar, alphabet, letter, language, noun, 1]
+[abc] = [fundamentals, basics, fundamental_principle, basic_principle, bedrock, 0]
+[aeroplane] = [airplane, pilot, air_traffic, sky, jet, 1]
+[aeroplane] = [airliner, amphibian, amphibious_aircraft, biplane, bomber, 0]

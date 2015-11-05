@@ -1,0 +1,2 @@
+[accord] = [pact, ode, harmony, chord, agreement, 1]
+[accord] = [harmony, concord, concordance, unanimity, community, -1]

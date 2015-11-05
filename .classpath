@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/L31205/workspace/SenticNetPlus/edu.mit.jwi_2.3.3_jdk.jar"/>
+	<classpathentry kind="lib" path="C:/Users/L31205/workspace/SenticNetPlus/stringsearch.jar"/>
+	<classpathentry kind="lib" path="C:/Users/L31205/workspace/SenticNetPlus/stringsearch-mini.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

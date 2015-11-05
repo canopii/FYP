@@ -1,0 +1,4 @@
+[appreciate] = [self_satisfaction, enjoy_oneself, good_feeling, happiness, desire_entertain, 1]
+[appreciate] = [recognize, acknowledge, 1]
+[ashamed] = [disgraceful, shameful, shame, inglorious, dishonored, -1]
+[ashamed] = [disgraced, dishonored, mortified, embarrassed, humiliated, -1]
