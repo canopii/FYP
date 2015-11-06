@@ -92,7 +92,7 @@ public class MyApp {
 		}		
 		System.out.println("test for stack");
 		
-		while(stackwork.peek!=null)
+		while(stackwork.)
 			{
 			System.out.println(combineLoop + "combines");
 		}		
