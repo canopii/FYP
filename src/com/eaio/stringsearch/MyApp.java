@@ -19,9 +19,10 @@ public class MyApp {
 		testArrayList.add("pineapple");
 		//String negwords="no dislike hate";
 		//String poswords="like love";
-		String testString= "I like pizza and pineapple";
+		String testString= "I like pizza and dislike pineapple";
 		String UserCho;
-		List<String> keywordsarray = getWords(tags); 
+		ArrayList<String> keywordsarray = getWords(tags); 
+		 //stack
 		Stack<String> stackwork= new Stack<String>();
 		BNDM test= new BNDM();
 		List<String>ContainKey ;
@@ -46,13 +47,33 @@ public class MyApp {
 			 if(key.equals("and"))
 				{
 					 result="10";
-					combine.add("10");		
+					combine.add("and");	
+					stackwork.push(key);
 				}
 			 else 
 			 {
-			    	lester=keywordMatch(key, combine);
-					String polarity=polaritySearch(key);
-					
+			    	lester=keywordMatch(key, keywordsarray);
+			    	if(lester==true)
+			    	{
+			    		stackwork.push(key);
+			    	}
+			    	else if (lester == false)
+			    	{
+			    		String polarity=polaritySearch(key);
+			    		if (polarity!=null)
+			    		{
+			    			if (polarity.equals("-1"))
+			    			{
+			    				stackwork.push("-1");
+			    				combine.add(key);
+			    			}
+			    			else if(polarity.equals("1"))
+			    			{
+			    				stackwork.push("1");
+			    				combine.add(key);
+			    			}
+			    		}
+			    	}
 			 }
 		}	
 			
@@ -67,7 +88,13 @@ public class MyApp {
 		System.out.println("test for loop");
 		for (String combineLoop:combine)
 		{
-			System.out.println(combineLoop);
+			System.out.println(combineLoop + "combines");
+		}		
+		System.out.println("test for stack");
+		
+		while(stackwork.peek!=null)
+			{
+			System.out.println(combineLoop + "combines");
 		}		
 		
 		//keyword array loop
@@ -111,8 +138,8 @@ public class MyApp {
 	System.out.println(test.javaSearchBytes(input, 0, lengthOfS, pattern,  j));*/
 	}
 	
-	public static List<String> getWords(String text) {
-	    List<String> words = new ArrayList<String>();
+	public static ArrayList<String> getWords(String text) {
+	    ArrayList<String> words = new ArrayList<String>();
 	    BreakIterator breakIterator = BreakIterator.getWordInstance();
 	    breakIterator.setText(text);
 	    int lastIndex = breakIterator.first();
