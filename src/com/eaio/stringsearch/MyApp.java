@@ -17,6 +17,7 @@ public class MyApp {
 		testArrayList.add("tea");
 		testArrayList.add("icecream");
 		testArrayList.add("pineapple");
+		String temp;
 		//String negwords="no dislike hate";
 		//String poswords="like love";
 		String testString= "I like pizza and dislike pineapple";
@@ -92,9 +93,10 @@ public class MyApp {
 		}		
 		System.out.println("test for stack");
 		
-		while(stackwork.)
+		while(!stackwork.isEmpty())
 			{
-			System.out.println(combineLoop + "combines");
+			System.out.println(stackwork.peek() + "STACK");
+			temp=stackwork.pop();
 		}		
 		
 		//keyword array loop
